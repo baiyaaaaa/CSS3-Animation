@@ -1,15 +1,14 @@
+@charset "UTF-8";
 @import "init";
 
 @each $animation in $animation-names {
-  .#{$animation} { @include prefixer(animation-name, $animation, webkit moz ms o spec); }
+  .#{$animation} { @include prefixer(animation-name, $animation, webkit moz ms spec); }
 }
-/* 淡入 */
-@include keyframes(fadein, webkit moz ms o spec) {
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
-/* 淡入-从上 */
-@include keyframes(fadeinT, webkit moz ms o spec) {
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
+/* 从上淡入 */
+@include fadein(top);
+/* 从右淡入 */
+@include fadein(right);
+/* 从下淡入 */
+@include fadein(bottom);
+/* 从左淡入 */
+@include fadein(left);

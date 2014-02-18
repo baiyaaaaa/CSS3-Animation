@@ -1,352 +1,463 @@
-@charset "GBK";
+@charset "UTF-8";
+/* 内核前缀 */
+/* 动画数组 */
+/* 淡入 */
 .fadein {
   -webkit-animation-name: fadein;
   -moz-animation-name: fadein;
   -ms-animation-name: fadein;
-  -o-animation-name: fadein;
-  animation-name: fadein; }
+  animation-name: fadein;
+}
 
 .fadeinT {
   -webkit-animation-name: fadeinT;
   -moz-animation-name: fadeinT;
   -ms-animation-name: fadeinT;
-  -o-animation-name: fadeinT;
-  animation-name: fadeinT; }
+  animation-name: fadeinT;
+}
 
 .fadeinR {
   -webkit-animation-name: fadeinR;
   -moz-animation-name: fadeinR;
   -ms-animation-name: fadeinR;
-  -o-animation-name: fadeinR;
-  animation-name: fadeinR; }
+  animation-name: fadeinR;
+}
 
 .fadeinL {
   -webkit-animation-name: fadeinL;
   -moz-animation-name: fadeinL;
   -ms-animation-name: fadeinL;
-  -o-animation-name: fadeinL;
-  animation-name: fadeinL; }
+  animation-name: fadeinL;
+}
 
 .fadeout {
   -webkit-animation-name: fadeout;
   -moz-animation-name: fadeout;
   -ms-animation-name: fadeout;
-  -o-animation-name: fadeout;
-  animation-name: fadeout; }
+  animation-name: fadeout;
+}
 
 .fadeoutT {
   -webkit-animation-name: fadeoutT;
   -moz-animation-name: fadeoutT;
   -ms-animation-name: fadeoutT;
-  -o-animation-name: fadeoutT;
-  animation-name: fadeoutT; }
+  animation-name: fadeoutT;
+}
 
 .fadeoutR {
   -webkit-animation-name: fadeoutR;
   -moz-animation-name: fadeoutR;
   -ms-animation-name: fadeoutR;
-  -o-animation-name: fadeoutR;
-  animation-name: fadeoutR; }
+  animation-name: fadeoutR;
+}
 
 .fadeoutB {
   -webkit-animation-name: fadeoutB;
   -moz-animation-name: fadeoutB;
   -ms-animation-name: fadeoutB;
-  -o-animation-name: fadeoutB;
-  animation-name: fadeoutB; }
+  animation-name: fadeoutB;
+}
 
 .fadeoutL {
   -webkit-animation-name: fadeoutL;
   -moz-animation-name: fadeoutL;
   -ms-animation-name: fadeoutL;
-  -o-animation-name: fadeoutL;
-  animation-name: fadeoutL; }
+  animation-name: fadeoutL;
+}
 
 .bounce {
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
   -ms-animation-name: bounce;
-  -o-animation-name: bounce;
-  animation-name: bounce; }
+  animation-name: bounce;
+}
 
 .bouncein {
   -webkit-animation-name: bouncein;
   -moz-animation-name: bouncein;
   -ms-animation-name: bouncein;
-  -o-animation-name: bouncein;
-  animation-name: bouncein; }
+  animation-name: bouncein;
+}
 
 .bounceinT {
   -webkit-animation-name: bounceinT;
   -moz-animation-name: bounceinT;
   -ms-animation-name: bounceinT;
-  -o-animation-name: bounceinT;
-  animation-name: bounceinT; }
+  animation-name: bounceinT;
+}
 
 .bounceinR {
   -webkit-animation-name: bounceinR;
   -moz-animation-name: bounceinR;
   -ms-animation-name: bounceinR;
-  -o-animation-name: bounceinR;
-  animation-name: bounceinR; }
+  animation-name: bounceinR;
+}
 
 .bounceinB {
   -webkit-animation-name: bounceinB;
   -moz-animation-name: bounceinB;
   -ms-animation-name: bounceinB;
-  -o-animation-name: bounceinB;
-  animation-name: bounceinB; }
+  animation-name: bounceinB;
+}
 
 .bounceinL {
   -webkit-animation-name: bounceinL;
   -moz-animation-name: bounceinL;
   -ms-animation-name: bounceinL;
-  -o-animation-name: bounceinL;
-  animation-name: bounceinL; }
+  animation-name: bounceinL;
+}
 
 .bounceout {
   -webkit-animation-name: bounceout;
   -moz-animation-name: bounceout;
   -ms-animation-name: bounceout;
-  -o-animation-name: bounceout;
-  animation-name: bounceout; }
+  animation-name: bounceout;
+}
 
 .bounceoutT {
   -webkit-animation-name: bounceoutT;
   -moz-animation-name: bounceoutT;
   -ms-animation-name: bounceoutT;
-  -o-animation-name: bounceoutT;
-  animation-name: bounceoutT; }
+  animation-name: bounceoutT;
+}
 
 .bounceoutR {
   -webkit-animation-name: bounceoutR;
   -moz-animation-name: bounceoutR;
   -ms-animation-name: bounceoutR;
-  -o-animation-name: bounceoutR;
-  animation-name: bounceoutR; }
+  animation-name: bounceoutR;
+}
 
 .bounceoutB {
   -webkit-animation-name: bounceoutB;
   -moz-animation-name: bounceoutB;
   -ms-animation-name: bounceoutB;
-  -o-animation-name: bounceoutB;
-  animation-name: bounceoutB; }
+  animation-name: bounceoutB;
+}
 
 .bounceoutL {
   -webkit-animation-name: bounceoutL;
   -moz-animation-name: bounceoutL;
   -ms-animation-name: bounceoutL;
-  -o-animation-name: bounceoutL;
-  animation-name: bounceoutL; }
+  animation-name: bounceoutL;
+}
 
 .rotatein {
   -webkit-animation-name: rotatein;
   -moz-animation-name: rotatein;
   -ms-animation-name: rotatein;
-  -o-animation-name: rotatein;
-  animation-name: rotatein; }
+  animation-name: rotatein;
+}
 
 .rotateinLT {
   -webkit-animation-name: rotateinLT;
   -moz-animation-name: rotateinLT;
   -ms-animation-name: rotateinLT;
-  -o-animation-name: rotateinLT;
-  animation-name: rotateinLT; }
+  animation-name: rotateinLT;
+}
 
 .rotateinLB {
   -webkit-animation-name: rotateinLB;
   -moz-animation-name: rotateinLB;
   -ms-animation-name: rotateinLB;
-  -o-animation-name: rotateinLB;
-  animation-name: rotateinLB; }
+  animation-name: rotateinLB;
+}
 
 .rotateinRT {
   -webkit-animation-name: rotateinRT;
   -moz-animation-name: rotateinRT;
   -ms-animation-name: rotateinRT;
-  -o-animation-name: rotateinRT;
-  animation-name: rotateinRT; }
+  animation-name: rotateinRT;
+}
 
 .rotateinRB {
   -webkit-animation-name: rotateinRB;
   -moz-animation-name: rotateinRB;
   -ms-animation-name: rotateinRB;
-  -o-animation-name: rotateinRB;
-  animation-name: rotateinRB; }
+  animation-name: rotateinRB;
+}
 
 .rotateout {
   -webkit-animation-name: rotateout;
   -moz-animation-name: rotateout;
   -ms-animation-name: rotateout;
-  -o-animation-name: rotateout;
-  animation-name: rotateout; }
+  animation-name: rotateout;
+}
 
 .rotateoutLT {
   -webkit-animation-name: rotateoutLT;
   -moz-animation-name: rotateoutLT;
   -ms-animation-name: rotateoutLT;
-  -o-animation-name: rotateoutLT;
-  animation-name: rotateoutLT; }
+  animation-name: rotateoutLT;
+}
 
 .rotateoutLB {
   -webkit-animation-name: rotateoutLB;
   -moz-animation-name: rotateoutLB;
   -ms-animation-name: rotateoutLB;
-  -o-animation-name: rotateoutLB;
-  animation-name: rotateoutLB; }
+  animation-name: rotateoutLB;
+}
 
 .rotateoutRT {
   -webkit-animation-name: rotateoutRT;
   -moz-animation-name: rotateoutRT;
   -ms-animation-name: rotateoutRT;
-  -o-animation-name: rotateoutRT;
-  animation-name: rotateoutRT; }
+  animation-name: rotateoutRT;
+}
 
 .rotateoutRB {
   -webkit-animation-name: rotateoutRB;
   -moz-animation-name: rotateoutRB;
   -ms-animation-name: rotateoutRB;
-  -o-animation-name: rotateoutRB;
-  animation-name: rotateoutRB; }
+  animation-name: rotateoutRB;
+}
 
 .flip {
   -webkit-animation-name: flip;
   -moz-animation-name: flip;
   -ms-animation-name: flip;
-  -o-animation-name: flip;
-  animation-name: flip; }
+  animation-name: flip;
+}
 
 .flipinX {
   -webkit-animation-name: flipinX;
   -moz-animation-name: flipinX;
   -ms-animation-name: flipinX;
-  -o-animation-name: flipinX;
-  animation-name: flipinX; }
+  animation-name: flipinX;
+}
 
 .flipinY {
   -webkit-animation-name: flipinY;
   -moz-animation-name: flipinY;
   -ms-animation-name: flipinY;
-  -o-animation-name: flipinY;
-  animation-name: flipinY; }
+  animation-name: flipinY;
+}
 
 .flipoutX {
   -webkit-animation-name: flipoutX;
   -moz-animation-name: flipoutX;
   -ms-animation-name: flipoutX;
-  -o-animation-name: flipoutX;
-  animation-name: flipoutX; }
+  animation-name: flipoutX;
+}
 
 .flipoutY {
   -webkit-animation-name: flipoutY;
   -moz-animation-name: flipoutY;
   -ms-animation-name: flipoutY;
-  -o-animation-name: flipoutY;
-  animation-name: flipoutY; }
+  animation-name: flipoutY;
+}
 
 .flash {
   -webkit-animation-name: flash;
   -moz-animation-name: flash;
   -ms-animation-name: flash;
-  -o-animation-name: flash;
-  animation-name: flash; }
+  animation-name: flash;
+}
 
 .shake {
   -webkit-animation-name: shake;
   -moz-animation-name: shake;
   -ms-animation-name: shake;
-  -o-animation-name: shake;
-  animation-name: shake; }
+  animation-name: shake;
+}
 
 .swing {
   -webkit-animation-name: swing;
   -moz-animation-name: swing;
   -ms-animation-name: swing;
-  -o-animation-name: swing;
-  animation-name: swing; }
+  animation-name: swing;
+}
 
 .wobble {
   -webkit-animation-name: wobble;
   -moz-animation-name: wobble;
   -ms-animation-name: wobble;
-  -o-animation-name: wobble;
-  animation-name: wobble; }
+  animation-name: wobble;
+}
 
 .ring {
   -webkit-animation-name: ring;
   -moz-animation-name: ring;
   -ms-animation-name: ring;
-  -o-animation-name: ring;
-  animation-name: ring; }
+  animation-name: ring;
+}
 
-/* 淡入 */
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes fadein {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-ms-keyframes fadein {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes fadein {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-/* 淡入-从上 */
+/* 从上淡入 */
 @-webkit-keyframes fadeinT {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+  }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @-moz-keyframes fadeinT {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -moz-transform: translateY(-100px);
+  }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @-ms-keyframes fadeinT {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -ms-transform: translateY(-100px);
+  }
 
   100% {
-    opacity: 1; } }
-
-@-o-keyframes fadeinT {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes fadeinT {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(-100px);
+  }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
+/* 从右淡入 */
+@-webkit-keyframes fadeinR {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeinR {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinR {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinR {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 从下淡入 */
+@-webkit-keyframes fadeinB {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeinB {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinB {
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinB {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 从左淡入 */
+@-webkit-keyframes fadeinL {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeinL {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinL {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinL {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

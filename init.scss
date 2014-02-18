@@ -1,0 +1,91 @@
+$prefix-for-webkit: true !default;
+$prefix-for-mozilla: true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera: true !default;
+$prefix-for-spec: true !default; // required for keyframe mixin
+
+$animation-names: fadein fadeinT fadeinR fadeinL fadeout fadeoutT fadeoutR fadeoutB fadeoutL bounce bouncein bounceinT bounceinR bounceinB bounceinL bounceout bounceoutT bounceoutR bounceoutB bounceoutL rotatein rotateinLT rotateinLB rotateinRT rotateinRB rotateout rotateoutLT rotateoutLB rotateoutRT rotateoutRB flip flipinX flipinY flipoutX flipoutY flash shake swing wobble ring;
+
+// disable prefix
+@mixin disable-prefix-for-all() {
+  $prefix-for-webkit: false;
+  $prefix-for-mozilla: false;
+  $prefix-for-microsoft: false;
+  $prefix-for-opera: false;
+}
+
+// prefixer
+// Example: @include prefixer(border-radius, $radius, webkit moz);
+//-----------------------------------------------------
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+
+    @if $prefix == webkit and $prefix-for-webkit == true {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz and $prefix-for-mozilla == true {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms and $prefix-for-microsoft == true {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == o and $prefix-for-opera == true {
+      -o-#{$property}: $value;
+    }
+    @else if $prefix == spec and $prefix-for-spec == true {
+      #{$property}: $value;
+    }
+    @else {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin keyframes($name, $prefixes) {
+  $original-prefix-for-webkit: $prefix-for-webkit;
+  $original-prefix-for-mozilla: $prefix-for-mozilla;
+  $original-prefix-for-microsoft: $prefix-for-microsoft;
+  $original-prefix-for-opera: $prefix-for-opera;
+  
+  @each $prefix in $prefixes {
+    @if $prefix == webkit and $original-prefix-for-webkit == true {
+      @include disable-prefix-for-all();
+      $prefix-for-webkit: true;
+      @-webkit-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $prefix == moz and $original-prefix-for-mozilla == true {
+      @include disable-prefix-for-all();
+      $prefix-for-mozilla: true;
+      @-moz-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $prefix == ms and $original-prefix-for-microsoft == true {
+      @include disable-prefix-for-all();
+      $prefix-for-microsoft: true;
+      @-ms-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $prefix == o and $original-prefix-for-opera == true {
+      @include disable-prefix-for-all();
+      $prefix-for-opera: true;
+      @-o-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $prefix == spec {
+      @include disable-prefix-for-all();
+      @keyframes #{$name} {
+        @content;
+      }
+    }
+  }
+
+  $prefix-for-webkit: $original-prefix-for-webkit;
+  $prefix-for-mozilla: $original-prefix-for-mozilla;
+  $prefix-for-microsoft: $original-prefix-for-microsoft;
+  $prefix-for-opera: $original-prefix-for-opera;
+}

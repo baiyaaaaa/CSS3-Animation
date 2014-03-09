@@ -164,28 +164,67 @@ $animation-names: fadein fadeinT fadeinR fadeinL fadeout fadeoutT fadeoutR fadeo
 
 /* 淡入 */
 @mixin fadein($direction, $fromOP:0, $toOP:1) {
+  @if $direction == none {
+    @include keyframes(fadeinT, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;}
+    }
+  }
   @if $direction == top {
     @include keyframes(fadeinT, webkit moz ms spec) {
-      0%{opacity:0;@include translateY(-100px);}
-      100%{opacity:1;}
+      0%{opacity:$fromOP;@include translateY(-100px);}
+      100%{opacity:$toOP;}
     }
   }
   @if $direction == right {
     @include keyframes(fadeinR, webkit moz ms spec) {
-      0%{opacity:0;@include translateX(100px);}
-      100%{opacity:1;}
+      0%{opacity:$fromOP;@include translateX(100px);}
+      100%{opacity:$toOP;}
     }
   }
   @if $direction == bottom {
     @include keyframes(fadeinB, webkit moz ms spec) {
-      0%{opacity:0;@include translateY(100px);}
-      100%{opacity:1;}
+      0%{opacity:$fromOP;@include translateY(100px);}
+      100%{opacity:$toOP;}
     }
   }
   @if $direction == left {
     @include keyframes(fadeinL, webkit moz ms spec) {
-      0%{opacity:0;@include translateX(-100px);}
-      100%{opacity:1;}
+      0%{opacity:$fromOP;@include translateX(-100px);}
+      100%{opacity:$toOP;}
+    }
+  }
+}
+/* 淡出 */
+@mixin fadeout($direction, $fromOP:1, $toOP:0) {
+  @if $direction == none {
+    @include keyframes(fadeinT, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;}
+    }
+  }
+  @if $direction == top {
+    @include keyframes(fadeinT, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;@include translateY(-100px);}
+    }
+  }
+  @if $direction == right {
+    @include keyframes(fadeinR, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;@include translateX(100px);}
+    }
+  }
+  @if $direction == bottom {
+    @include keyframes(fadeinB, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;@include translateY(100px);}
+    }
+  }
+  @if $direction == left {
+    @include keyframes(fadeinL, webkit moz ms spec) {
+      0%{opacity:$fromOP;}
+      100%{opacity:$toOP;@include translateX(-100px);}
     }
   }
 }

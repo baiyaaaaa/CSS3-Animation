@@ -4,6 +4,8 @@
 @each $animation in $animation-names {
   .#{$animation} { @include prefixer(animation-name, $animation, webkit moz ms spec); }
 }
+/* 淡入 */
+@include fadein(none);
 /* 从上淡入 */
 @include fadein(top);
 /* 从右淡入 */
@@ -12,3 +14,13 @@
 @include fadein(bottom);
 /* 从左淡入 */
 @include fadein(left);
+/* 淡出 */
+@include fadeout(none);
+/* 从上淡出 */
+@include fadeout(top);
+/* 从右淡出 */
+@include fadeout(right);
+/* 从下淡出 */
+@include fadeout(bottom);
+/* 从左淡出 */
+@include fadeout(left);
